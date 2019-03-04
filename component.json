@@ -2,7 +2,7 @@
     "name": "infra",
     "subcomponents": [
         {
-            "name": "fabrikate-sample-app",
+            "name": "project-jackson",
             "source": "https://github.com/samiyaakhtar/fabrikate-sample-app",
             "method": "git"
         }
