@@ -1,2 +1,2 @@
 # jacksone-source
-Project jackson source repo with hld files
+This is a sample HLD repo for Project jackson
