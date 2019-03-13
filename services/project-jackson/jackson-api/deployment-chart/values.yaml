@@ -57,4 +57,4 @@ secretKeyRef: jackson-secrets
 jaegerAgentHost: "jaeger-agent.jaeger.svc.cluster.local"
 
 jaegerAgentPort: "6831"
-imagePullSecret: regcred
+imagePullSecret: saakhtatestsecret-jackson
