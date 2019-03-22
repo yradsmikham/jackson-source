@@ -72,6 +72,8 @@ function download_fab() {
 
 # Install Fabrikate
 function install_fab() {
+    echo "git status"
+    git status
     # Run this command to make script exit on any failure
     set -e
     export PATH=$PATH:$HOME/fab
@@ -132,7 +134,10 @@ function git_connect() {
 # Git commit
 function git_commit() {
     echo "GIT CHECKOUT $BRANCH_NAME"
-    git checkout $BRANCH_NAME
+    if ! git checkout $BRANCH_NAME ; then
+        git checkout -b $BRANCH_NAME
+    fi
+    
     echo "GIT STATUS"
     git status
     echo "GIT REMOVE"
