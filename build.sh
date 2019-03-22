@@ -160,8 +160,12 @@ function git_commit() {
         echo "NOTHING TO COMMIT"
     fi
 
-    echo "GIT PULL" 
-    git pull
+    echo "git remote rm origin"
+    git remote rm origin
+    echo "git remote add origin https://$ACCESS_TOKEN_SECRET@$repo_url"
+    git remote add origin https://$ACCESS_TOKEN_SECRET@$repo_url
+    echo "GIT PULL origin $BRANCH_NAME" 
+    git pull origin $BRANCH_NAME
 }
 
 # Perform a Git push
@@ -171,8 +175,8 @@ function git_push() {
     repo_url="${repo_url#http://}"
     repo_url="${repo_url#https://}"
 
-    echo "GIT PUSH: https://$ACCESS_TOKEN_SECRET@$repo_url origin $BRANCH_NAME"
-    git push https://$ACCESS_TOKEN_SECRET@$repo_url origin $BRANCH_NAME
+    echo "GIT PUSH origin $BRANCH_NAME"
+    git push origin $BRANCH_NAME
     retVal=$? && [ $retVal -ne 0 ] && exit $retVal
     echo "GIT STATUS"
     git status
