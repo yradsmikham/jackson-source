@@ -131,7 +131,7 @@ function git_connect() {
 
 # Git commit
 function git_commit() {
-    echo "GIT CHECKOUT"
+    echo "GIT CHECKOUT $BRANCH_NAME"
     git checkout $BRANCH_NAME
     echo "GIT STATUS"
     git status
@@ -166,7 +166,7 @@ function git_push() {
     repo_url="${repo_url#http://}"
     repo_url="${repo_url#https://}"
 
-    echo "GIT PUSH: https://$ACCESS_TOKEN_SECRET@$repo_url"
+    echo "GIT PUSH: https://$ACCESS_TOKEN_SECRET@$repo_url origin $BRANCH_NAME"
     git push https://$ACCESS_TOKEN_SECRET@$repo_url origin $BRANCH_NAME
     retVal=$? && [ $retVal -ne 0 ] && exit $retVal
     echo "GIT STATUS"
