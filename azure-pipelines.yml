@@ -35,4 +35,4 @@ steps:
       ACCESS_TOKEN_SECRET: $(ACCESS_TOKEN)
       COMMIT_MESSAGE: $(Build.SourceVersionMessage)
       MANIFEST_REPO: $(MANIFEST_REPO)
-      BRANCH_NAME: $(Build.SourceBranch)
+      BRANCH_NAME: $(Build.SourceBranchName)
