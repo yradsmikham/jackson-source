@@ -1,6 +1,7 @@
 trigger:
   - master
   - samiya-test
+  - samiya-test-1
 
 pool:
   vmImage: "Ubuntu-16.04"
