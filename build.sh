@@ -171,8 +171,8 @@ function git_push() {
     repo_url="${repo_url#http://}"
     repo_url="${repo_url#https://}"
 
-    echo "GIT PUSH: https://$ACCESS_TOKEN_SECRET@$repo_url -u origin $BRANCH_NAME"
-    git push https://$ACCESS_TOKEN_SECRET@$repo_url -u origin $BRANCH_NAME
+    echo "GIT PUSH: https://$ACCESS_TOKEN_SECRET@$repo_url"
+    git push https://$ACCESS_TOKEN_SECRET@$repo_url
     retVal=$? && [ $retVal -ne 0 ] && exit $retVal
     echo "GIT STATUS"
     git status
