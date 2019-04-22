@@ -8,5 +8,5 @@ subcomponents:
     source: "https://github.com/timfpark/fabrikate-cloud-native"
     method: "git"
   - name: "project-jackson"
-    source: "https://github.com/samiyaakhtar/fabrikate-entref-spring-boot"
+    source: "https://github.com/Microsoft/fabrikate-entref-spring-boot"
     method: "git"
