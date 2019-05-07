@@ -1,4 +1,9 @@
 subcomponents:
+  jackson-api:
+    config:
+      image:
+        repository: saakhtatestregistry.azurecr.io/jackson-api
+        tag: v0.2
   stable:
     config:
       image:
