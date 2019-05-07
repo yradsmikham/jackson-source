@@ -4,6 +4,15 @@ subcomponents:
       image:
         repository: saakhtatestregistry.azurecr.io/jackson-api
         tag: v0.2
+  project-jackson:
+    subcomponents:
+      jackson-api:
+        subcomponents:
+          stable:
+            config:
+              image:
+                repository: saakhtatestregistry.azurecr.io/jackson-api
+                tag: v0.2
   stable:
     config:
       image:
