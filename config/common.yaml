@@ -12,3 +12,10 @@ subcomponents:
                       image:
                         repository: saakhtatestregistry.azurecr.io/jackson-api
                         tag: 27-master-42927eb
+              jackson-ui:
+                subcomponents:
+                  stable:
+                    config:
+                      image:
+                        repository: saakhtatestregistry.azurecr.io/jackson-ui
+                        tag: 28-master-1c7b8d2
