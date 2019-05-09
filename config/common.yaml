@@ -11,4 +11,4 @@ subcomponents:
                     config:
                       image:
                         repository: saakhtatestregistry.azurecr.io/jackson-api
-                        tag: "19"
+                        tag: "20"
