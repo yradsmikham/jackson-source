@@ -11,4 +11,4 @@ subcomponents:
                     config:
                       image:
                         repository: saakhtatestregistry.azurecr.io/jackson-api
-                        tag: 26-master-3fb425c
+                        tag: 27-master-42927eb
