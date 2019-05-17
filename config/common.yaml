@@ -18,4 +18,4 @@ subcomponents:
                     config:
                       image:
                         repository: saakhtatestregistry.azurecr.io/jackson-ui
-                        tag: 84-master-2781162
+                        tag: 85-master-9f3c743
